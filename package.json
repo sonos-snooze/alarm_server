@@ -6,6 +6,9 @@
   "directories": {
     "lib": "lib"
   },
+  "engines": {
+    "node": "8.4.0"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "create-node-project": "^1.0.2",
@@ -23,7 +26,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
+    "start": "node app.js",
     "start:dev": "nodemon ./bin/www"
   },
   "author": "Eric Chen",
