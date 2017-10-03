@@ -11,7 +11,7 @@ module.exports = {
       alarm_time: req.body.alarm_time,
       alarm_on: req.body.alarm_on
     })
-    .then(alarm => res.status(201).send(todo))
+    .then(alarm => res.status(201).send(alarm))
     .catch(error => res.status(400).send(error));
   },
 };
