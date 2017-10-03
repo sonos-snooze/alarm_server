@@ -29,7 +29,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon ./bin/www",
-    "start:dev": "nodemon ./bin/www"
+    "start:dev": "nodemon ./bin/www",
+    "postinstall": "sequelize db:migrate"
   },
   "author": "Eric Chen",
   "license": "ISC"
