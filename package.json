@@ -14,13 +14,13 @@
     "create-node-project": "^1.0.2",
     "express": "^4.16.1",
     "morgan": "^1.9.0",
-    "pg": "^7.3.0",
+    "nodemon": "^1.12.1",
+    "pg": "6.4.1",
     "pg-hstore": "^2.3.2",
     "sequelize": "3",
     "sequelize-cli": "^3.0.0",
     "sqlite3": "^3.1.13",
-    "tedious": "^2.0.0",
-    "nodemon": "^1.12.1"
+    "tedious": "^2.0.0"
   },
   "devDependencies": {
     "nodemon": "^1.12.1",
