@@ -16,6 +16,22 @@ module.exports = (sequelize, DataTypes) => {
     alarm_on: {
       allowNull: false,
       type: DataTypes.BOOLEAN
+    },
+    spotifySongID: {
+      allowNull: true,
+      type: DataTypes.STRING
+    },
+    spotifySongName: {
+      allowNull: true,
+      type: DataTypes.STRING
+    },
+    spotifySongArtist: {
+      allowNull: true,
+      type: DataTypes.STRING
+    },
+    spotifySongImgUrl: {
+      allowNull: true,
+      type: DataTypes.STRING
     }
   }, {
     classMethods: {

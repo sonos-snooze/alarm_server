@@ -6,7 +6,11 @@ module.exports = {
       name: req.body.name,
       user_id: req.body.user_id,
       alarm_time: req.body.alarm_time,
-      alarm_on: req.body.alarm_on
+      alarm_on: req.body.alarm_on,
+      spotifySongID: req.body.spotifySongID,
+      spotifySongArtist: req.body.spotifySongArtist,
+      spotifySongImgUrl: req.body.spotifySongUrl,
+      spotifySongName: req.body.spotifySongName
     })
     .then(alarm => res.status(201).send(alarm))
     .catch(error => res.status(400).send(error));
