@@ -2,9 +2,6 @@ const Alarm = require('../models').Alarm;
 
 module.exports = {
   create(req, res) {
-    console.log(req);
-    console.log(req.body);
-    console.log(req.body.name);
     return Alarm.create({
       name: req.body.name,
       user_id: req.body.user_id,
@@ -14,4 +11,10 @@ module.exports = {
     .then(alarm => res.status(201).send(alarm))
     .catch(error => res.status(400).send(error));
   },
+  list(req, res) {
+    return Alarm
+      .all()
+      .then(alarms => res.status(200).send(alarms))
+      .catch(error => res.status(400).send(error));
+  }
 };

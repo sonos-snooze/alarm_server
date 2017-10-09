@@ -6,4 +6,5 @@ module.exports = (app) => {
   }));
 
   app.post('/api/alarms', alarmsController.create);
+  app.get('/api/alarms', alarmsController.list);
 };
