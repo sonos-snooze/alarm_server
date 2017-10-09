@@ -9,7 +9,7 @@ module.exports = {
       alarm_on: req.body.alarm_on,
       spotifySongID: req.body.spotifySongID,
       spotifySongArtist: req.body.spotifySongArtist,
-      spotifySongImgUrl: req.body.spotifySongUrl,
+      spotifySongImgUrl: req.body.spotifySongImgUrl,
       spotifySongName: req.body.spotifySongName
     })
     .then(alarm => res.status(201).send(alarm))
